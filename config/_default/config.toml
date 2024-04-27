@@ -1,0 +1,13 @@
+# -- Site Configuration --
+# Refer to the theme docs for more details about each of these parameters.
+# https://jpanther.github.io/congo/docs/getting-started/
+
+baseURL = "https://yangzm.net/"
+defaultContentLanguage = "zh-cn"		# 默认语言
+
+enableRobotsTXT = true
+paginate = 10						# 在文章列表中每页列出的文章数
+summaryLength = 0					# 在front matter中未提供摘要时，用于生成文章摘要的字数。值为 0 将使用第一句。当摘要被隐藏时，此值无效
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]		# 生成站点的输出格式
