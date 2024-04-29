@@ -15,7 +15,7 @@ copyright = "Copy, _right?_ :thinking_face:"
 [params.author]
   name = "一纸枫叶"
   image = "img/author.png"
-  headline = "Blog"		# 包含作者头衔的 Markdown 字符串。它将显示在主页上作者姓名下方。
+  headline = "It’s really less of a blog and more of a fancy echo chamber"		# 包含作者头衔的 Markdown 字符串。它将显示在主页上作者姓名下方。
   bio = "4DV Lab, ShanghaiTech University"
   links = [
     { email = "mailto:csyzm@cug.edu.cn" },
