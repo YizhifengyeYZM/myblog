@@ -1927,6 +1927,10 @@ code {
   margin-bottom: 1.5rem;
 }
 
+.mb-8 {
+  margin-bottom: 2rem;
+}
+
 .mb-\[2px\] {
   margin-bottom: 2px;
 }
