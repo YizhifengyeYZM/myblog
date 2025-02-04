@@ -1,1 +1,15 @@
-.max-w-prose { max-width: 100% !important;}
+.max-w-prose { 
+    max-width: 100% !important;
+
+}
+/* .max-w-prose.prose {
+    Width: 50%;
+    Height: auto;
+} */
+.katex {
+    overflow-x: hidden;
+}
+.img {
+    border-radius: 0; /* 直角 */
+    box-shadow: none; /* 无阴影 */
+  }

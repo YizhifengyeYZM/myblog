@@ -1,7 +1,7 @@
 {{ define "main" }}
-  {{- $images := .Resources.ByType "image" }}
-  {{- $cover := $images.GetMatch (.Params.cover | default "*cover*") }}
-  {{- $feature := $images.GetMatch (.Params.feature | default "*feature*") | default $cover }}
+  {{- $images := .Resources.Match "assets/*" }}
+  {{- $cover := $images.GetMatch (printf "assets/%s" .Params.cover | default "*cover*") }}
+  {{- $feature := $images.GetMatch (printf "assets/%s" .Params.feature | default "*feature*") | default $cover }}
   <article>
     <header class="max-w-prose">
       {{ if .Params.showBreadcrumbs | default (.Site.Params.article.showBreadcrumbs | default false) }}
@@ -22,9 +22,9 @@
         </div>
       {{ end }}
       {{ with $feature }}
-        <div class="prose">
+        <div class="max-w-prose">
           {{ $altText := $.Params.featureAlt | default $.Params.coverAlt | default "" }}
-          {{ $class := "mb-6 -mt-4 rounded-md" }}
+          {{ $class := "mx-auto my-0 rounded-md" }}
           {{ $webp := $.Page.Site.Params.enableImageWebp | default true }}
           {{ partial "picture.html" (dict "img" . "alt" $altText "class" $class "lazy" false "webp" $webp) }}
           {{ with $.Params.coverCaption }}

@@ -15,15 +15,24 @@
   pageRef = "posts"
   weight = 10
 
-[[main]]
-  name = "Categories"
-  pageRef = "categories"
-  weight = 20
+# [[main]]
+#   name = "Categories"
+#   pageRef = "categories"
+#   weight = 20
+
+# [[main]]
+#   name = "Tags"
+#   pageRef = "tags"
+#   weight = 30
 
 [[main]]
-  name = "Tags"
-  pageRef = "tags"
-  weight = 30
+  name = "Homepage"
+  url = "https://yizhifengyeyzm.github.io/"
+  weight = 20
+  # [main.params]
+  #   icon = "github"
+  #   showName = false
+  #   target = "_blank"
 
 # [[main]]
 #   name = "GitHub"
